@@ -126,6 +126,17 @@ let dataSet = [89, 30, 25, 32, 72, 70, 51, 42, 25, 24, 53, 55, 78, 50, 13, 40, 4
 '5. Implement different tree traversals'
 
 '6. Find the next commanding officer'
+function main2() {
+    let commanderTree = new BST(5, 'Captain Pickard')
+    commanderTree.insert(3, 'Commander Riker')
+    commanderTree.insert(6, 'Commander Data')
+    commanderTree.insert(2, 'Lt. Cmdr. Worf')
+    commanderTree.insert(4, 'Lt. Cmdr. LaForge')
+    commanderTree.insert(8, 'Lt. Cmdr. Crusher')
+    commanderTree.insert(1, 'Lieutenant security-officer')
+    commanderTree.insert(7, 'Lieutenant Selar')
+    return commanderTree
+  }
 
 '7. Max profit'
 
