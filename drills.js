@@ -1,5 +1,7 @@
 'DSA-Searching'
 
+const BST = require('./BST')
+
 
 // Adding a React UI==============================================================================
 //   See question-2-react-app for answer
@@ -126,7 +128,8 @@ let dataSet = [89, 30, 25, 32, 72, 70, 51, 42, 25, 24, 53, 55, 78, 50, 13, 40, 4
 '5. Implement different tree traversals'
 
 '6. Find the next commanding officer'
-function main2() {
+
+function commandingOfficer() {
     let commanderTree = new BST(5, 'Captain Pickard')
     commanderTree.insert(3, 'Commander Riker')
     commanderTree.insert(6, 'Commander Data')
@@ -137,6 +140,8 @@ function main2() {
     commanderTree.insert(7, 'Lieutenant Selar')
     return commanderTree
   }
+
+console.log(commandingOfficer())
 
 '7. Max profit'
 
@@ -150,4 +155,4 @@ function findMaxProfit(arr) {
     return profit
   }
   
-  console.log(findMaxProfit([128, 97, 121, 123, 98, 97, 105]))
+  //console.log(findMaxProfit([128, 97, 121, 123, 98, 97, 105]))
