@@ -126,3 +126,17 @@ let dataSet = [89, 30, 25, 32, 72, 70, 51, 42, 25, 24, 53, 55, 78, 50, 13, 40, 4
 '5. Implement different tree traversals'
 
 '6. Find the next commanding officer'
+
+'7. Max profit'
+
+function findMaxProfit(arr) {
+    let profit = 0
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i+1] - arr[i] > profit) {
+        profit = arr[i+1] - arr[i]
+      }
+    }
+    return profit
+  }
+  
+  console.log(findMaxProfit([128, 97, 121, 123, 98, 97, 105]))
